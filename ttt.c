@@ -10,7 +10,7 @@
 void print_instructions();
 void init_board(int b[], int n);
 void show_board(int b[]);
-int dotc(int d);
+int dtoc(int d);
 size_t get_input(char *line, int max);
 int computer_move(int board[]);
 int computer_tryagain(int tries[]);
@@ -42,14 +42,14 @@ void init_board(int b[], int n)
 
 void show_board(int b[])
 {
-    printf("%c | %c | %c\n", dotc(b[0]), dotc(b[1]), dotc(b[2]));
+    printf("%c | %c | %c\n", dtoc(b[0]), dtoc(b[1]), dtoc(b[2]));
     printf("----------\n");
-    printf("%c | %c | %c\n", dotc(b[3]), dotc(b[4]), dotc(b[5]));
+    printf("%c | %c | %c\n", dtoc(b[3]), dtoc(b[4]), dtoc(b[5]));
     printf("----------\n");
-    printf("%c | %c | %c\n", dotc(b[6]), dotc(b[7]), dotc(b[8]));
+    printf("%c | %c | %c\n", dtoc(b[6]), dtoc(b[7]), dtoc(b[8]));
 }
 
-int dotc(int d)
+int dtoc(int d)
 {
     if (d == 'x' || d == 'o')
     {
